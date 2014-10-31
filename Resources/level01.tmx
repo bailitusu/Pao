@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="71" height="20" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="map" tilewidth="32" tileheight="32">
+  <tileoffset x="1" y="0"/>
+  <image source="map.png" width="170" height="71"/>
+ </tileset>
+ <tileset firstgid="11" name="sucai" tilewidth="32" tileheight="32">
+  <image source="meta_tiles.png" width="133" height="34"/>
+  <tile id="2">
+   <properties>
+    <property name="zaw" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="ground" width="71" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt2CEOACAMBMGm8P83o3EIoJCMWH8d2YyI1JbaAxtu3dK0VNcUGzZs2LCpjw0bNmzY1MeGDZtzNpqr/i/pzwbp1xND
+  </data>
+ </layer>
+ <layer name="zhangai" width="71" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt0rERACAIBEEi+y/ZEsQRxMfb0ACExwwAkGU43zL6vFBLRebMq9o39v1jpuhF5YZ3/6kyV0ee3UfkU51xdX/UIXsAwIkJwpQAYQ==
+  </data>
+ </layer>
+ <layer name="sucai" width="71" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt00ERADAIAzAMzL/daeD2YPQSBVBoFQDbnekBlkvPL30/+EW3a7qZz42Z4vcAeHEBROQAXA==
+  </data>
+ </layer>
+</map>
