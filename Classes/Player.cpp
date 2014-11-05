@@ -59,6 +59,7 @@ void Player::setViewPoint() {
 void Player::SetTagPosition(int x, int y) {
     CCSize spSize = mSprite->getContentSize();
     CCPoint mudiPos = CCPoint(x+spSize.width/2, y);
+    CCLOG("mudi pos x=%f,y=%f",mudiPos.x,mudiPos.y);
     CCPoint tiledPos = ChangeCoord(ccp(mudiPos.x, mudiPos.y));
     CCLOG("x=%f,y=%f",tiledPos.x,tiledPos.y);
     int tiledGid = sucai->tileGIDAt(tiledPos);
@@ -75,15 +76,14 @@ void Player::SetTagPosition(int x, int y) {
 }
 
 CCPoint Player::ChangeCoord(CCPoint pos){
-    CCSize mapNum = mditu->getMapSize();
     CCSize pisSize = mditu->getTileSize();
     int x = pos.x/pisSize.width;
     int y = (640-pos.y)/pisSize.width;
     if (x>0) {
-        x= x-1;
+        x= x-4;
     }
     if (y>0) {
-        y=y-0;
+        y=y-2;
     }
     return ccp(x,y);
 }
@@ -97,3 +97,4 @@ void Player::setTileMap(CCTMXTiledMap *map){
     this->sucai->setVisible(false);
     this->sucai->retain();
 }
+

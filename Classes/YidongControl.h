@@ -27,6 +27,7 @@ public:
     void setXspeed(int value);
     void setYspeed(int value);
 private:
+    bool touch;
     int mXspeed;
     int mYspeed;
 };

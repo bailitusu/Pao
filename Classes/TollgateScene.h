@@ -11,6 +11,8 @@
 
 #include <stdio.h>
 #include "cocos2d.h"
+#include "Player.h"
+#include "YidongControl.h"
 
 USING_NS_CC;
 
@@ -20,5 +22,8 @@ public:
     virtual bool init();
     static CCScene* scene();
     void addPlayer(CCTMXTiledMap* map);
+private:
+    void update();
+    bool onCollision();
 };
 #endif /* defined(__pao__TollgateScene__) */
