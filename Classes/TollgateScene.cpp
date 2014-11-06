@@ -8,7 +8,6 @@
 
 #include "TollgateScene.h"
 #include "Player.h"
-#include "EasyMoveControl.h"
 #include "YidongControl.h"
 bool TollgateScene::init() {
     CCTMXTiledMap* map = CCTMXTiledMap::create("level01.tmx");
@@ -27,7 +26,7 @@ CCScene* TollgateScene::scene() {
 void TollgateScene::addPlayer(CCTMXTiledMap *map) {
     CCSize pmSize = CCDirector::sharedDirector()->getVisibleSize();
     CCSprite* spplayer = CCSprite::create("zhujiao1.png");
-    Player* mPlayer = Player::create();
+    Player *mPlayer = Player::create();
     mPlayer->bindSprite(spplayer);
     mPlayer->setTileMap(map);
 
@@ -41,5 +40,4 @@ void TollgateScene::addPlayer(CCTMXTiledMap *map) {
     this->addChild(moveCon);
     mPlayer->setControl(moveCon);
     moveCon->setTouchEnabled(true);
-
 }

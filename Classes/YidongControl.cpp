@@ -32,6 +32,7 @@ void YidongControl::setYspeed(int value) {
     this->mYspeed = value;
 }
 bool YidongControl::ccTouchBegan(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent) {
+    touch=true;
     return true;
 }
 
@@ -50,6 +51,7 @@ void YidongControl::ccTouchMoved(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEv
 }
 
 void YidongControl::ccTouchEnded(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent) {
+    touch=false;
     setYspeed(0);
 }
 

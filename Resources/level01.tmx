@@ -14,7 +14,7 @@
  </tileset>
  <layer name="ground" width="71" height="20">
   <data encoding="base64" compression="zlib">
-   eJzt2CEOACAMBMGm8P83o3EIoJCMWH8d2YyI1JbaAxtu3dK0VNcUGzZs2LCpjw0bNmzY1MeGDZtzNpqr/i/pzwbp1xND
+   eJzt2LEJACAMAMEQ3X9mO8EuFhKEK36BKz8jIqXLhkpN7diwYcOGTX9s2LBhw6Y/NmzYvLXRWfc/0p8tLRcTMw==
   </data>
  </layer>
  <layer name="zhangai" width="71" height="20">
