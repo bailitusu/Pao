@@ -12,6 +12,8 @@
 	<dict>
 		<key>32AF9235F5F8982D1E13ABC0B03502F88982AC21</key>
 		<string>github.com:Yuhan-UMassD/Pao.git</string>
+		<key>7BAC67294CE7398ED80DE3C8B17ADA03B85D9FF0</key>
+		<string>https://github.com/bailitusu/Pao.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>proj.ios/pao.xcodeproj</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>32AF9235F5F8982D1E13ABC0B03502F88982AC21</key>
 		<string>../../..</string>
+		<key>7BAC67294CE7398ED80DE3C8B17ADA03B85D9FF0</key>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:Yuhan-UMassD/Pao.git</string>
@@ -28,6 +32,14 @@
 	<string>32AF9235F5F8982D1E13ABC0B03502F88982AC21</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7BAC67294CE7398ED80DE3C8B17ADA03B85D9FF0</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

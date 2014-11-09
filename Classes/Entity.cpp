@@ -7,7 +7,9 @@
 //
 
 #include "Entity.h"
-
+Entity::Entity() {
+    TwoTickFlag = false;
+}
 void Entity::bindSprite(CCSprite *sp) {
     mSprite = sp;
     this->addChild(mSprite);
@@ -23,10 +25,16 @@ void Entity::setControl(control *con) {
 }
 
 void Entity::SetTagPosition(int x, int y){
-    setPosition(ccp(x,y));
+    this->setPosition(ccp(x,y));
 }
 
 CCPoint Entity::getTagPosition() {
-    return getPosition();
+    return this->getPosition();
 }
 
+void Entity::SetTwotickFlag(bool flag) {
+    this->TwoTickFlag = flag;
+}
+bool Entity::getTwotickFlag() {
+    return this->TwoTickFlag;
+}

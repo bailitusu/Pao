@@ -27,6 +27,9 @@ public:
     void setXspeed(int value);
     void setYspeed(int value);
 private:
+    bool isInSprite(CCTouch* pTouch);
+    int ticktimes;
+    CCRect getBoundBox();
     bool touch;
     int mXspeed;
     int mYspeed;

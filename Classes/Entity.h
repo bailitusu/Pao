@@ -16,13 +16,17 @@
 USING_NS_CC;
 class Entity : public CCLayer,public ControlListen{
 public:
+    Entity();
     void bindSprite(CCSprite* sp);
     CCSprite* getSprite();
     void setControl(control* con);
     
     virtual void SetTagPosition(int x,int y);
     virtual CCPoint getTagPosition();
+    virtual void SetTwotickFlag(bool flag);
+    virtual bool getTwotickFlag();
 protected:
+    bool TwoTickFlag;
     CCSprite* mSprite;
     control* mKongzhi;
 };

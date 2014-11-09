@@ -16,5 +16,8 @@ class ControlListen {
 public:
     virtual void SetTagPosition(int x,int y)=0;
     virtual CCPoint getTagPosition()=0;
+    
+    virtual void SetTwotickFlag(bool flag)=0;
+    virtual bool getTwotickFlag()=0;
 };
 #endif /* defined(__pao__ControlListen__) */

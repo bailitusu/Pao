@@ -58,8 +58,8 @@ void Player::setViewPoint() {
 
 void Player::SetTagPosition(int x, int y) {
     CCSize spSize = mSprite->getContentSize();
-    CCPoint mudiPos = CCPoint(x+spSize.width/2, y);
-    CCLOG("mudi pos x=%f,y=%f",mudiPos.x,mudiPos.y);
+    CCPoint mudiPos = CCPoint(x+spSize.width/2, y+spSize.height/2);
+//    CCLOG("mudi pos x=%f,y=%f",mudiPos.x,mudiPos.y);
     CCPoint tiledPos = ChangeCoord(ccp(mudiPos.x, mudiPos.y));
     CCLOG("x=%f,y=%f",tiledPos.x,tiledPos.y);
     int tiledGid = sucai->tileGIDAt(tiledPos);
@@ -67,7 +67,13 @@ void Player::SetTagPosition(int x, int y) {
         CCDictionary* shuxing = mditu->propertiesForGID(tiledGid);
         const CCString* value = shuxing->valueForKey("zaw");
         if (value->m_sString.compare("true")==0) {
-            return;
+            if(Entity::getTwotickFlag()== true) {
+                x = x-2;
+                y = y-3;
+                Entity::SetTwotickFlag(false);
+            }else {
+                return;
+            }
         }
     }
 
@@ -83,7 +89,7 @@ CCPoint Player::ChangeCoord(CCPoint pos){
         x= x-4;
     }
     if (y>0) {
-        y=y-2;
+        y=y+2;
     }
     return ccp(x,y);
 }
